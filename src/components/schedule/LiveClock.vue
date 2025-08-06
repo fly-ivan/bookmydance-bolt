@@ -42,10 +42,10 @@ onUnmounted(() => {
 .live-clock {
   background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   border-radius: 12px;
-  padding: 0.5rem;
+  padding: 0.75rem 0.5rem;
   color: white;
   text-align: center;
-  width: 112px;
+  width: 120px;
   height: 64px;
   display: flex;
   flex-direction: column;
