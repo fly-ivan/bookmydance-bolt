@@ -87,7 +87,7 @@ const onInstructorChange = (event: Event) => {
   justify-content: space-between;
   background: var(--sidebar-bg);
   color: var(--text-primary);
-  padding: 0.75rem 0 0.75rem 1rem;
+  padding: 0.75rem 1rem 0.75rem 0;
   border-radius: 12px;
   margin-bottom: 0.75rem;
   border: 1px solid var(--border-primary);
@@ -99,9 +99,7 @@ const onInstructorChange = (event: Event) => {
   width: 120px;
   justify-content: flex-start;
   flex-shrink: 0;
-  padding: 0;
-  margin: 0;
-  padding-left: 0;
+  padding-left: 0.75rem;
   margin-left: 0;
 }
 

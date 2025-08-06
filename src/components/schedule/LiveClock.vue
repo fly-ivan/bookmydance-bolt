@@ -45,14 +45,13 @@ onUnmounted(() => {
   padding: 0.75rem 0.5rem;
   color: white;
   text-align: center;
-  width: 120px;
+  width: 112px;
   height: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
   margin: 0;
-  margin-left: 0;
   box-sizing: border-box;
   border: none;
 }

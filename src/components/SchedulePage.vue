@@ -281,7 +281,7 @@ const handleDeleteLesson = (lessonId: string) => {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: 120px repeat(v-bind(showWeekend ? 7 : 5), 1fr);
+  grid-template-columns: 112px repeat(v-bind(showWeekend ? 7 : 5), 1fr);
   gap: 4px;
   padding: 6px;
   grid-template-rows: 48px repeat(10, 64px);
@@ -305,7 +305,7 @@ const handleDeleteLesson = (lessonId: string) => {
   grid-column: 1;
   grid-row: 1;
   border: 1px solid var(--border-secondary);
-  width: 120px;
+  width: 112px;
   margin: 0;
 }
 
@@ -347,7 +347,7 @@ const handleDeleteLesson = (lessonId: string) => {
   grid-column: 1;
   text-align: center;
   border: 1px solid var(--border-secondary);
-  width: 120px;
+  width: 112px;
   margin: 0;
 }
 
@@ -376,7 +376,7 @@ const handleDeleteLesson = (lessonId: string) => {
   align-items: center;
   gap: 0.5rem;
   border: 1px solid var(--border-secondary);
-  width: 120px;
+  width: 112px;
   margin: 0;
 }
 
@@ -483,7 +483,7 @@ const handleDeleteLesson = (lessonId: string) => {
   margin-top: 1rem;
   padding: 8px;
   display: grid;
-  grid-template-columns: 120px repeat(v-bind(showWeekend ? 7 : 5), 1fr);
+  grid-template-columns: 112px repeat(v-bind(showWeekend ? 7 : 5), 1fr);
   gap: 8px;
   align-items: center;
   border: 1px solid var(--border-primary);
