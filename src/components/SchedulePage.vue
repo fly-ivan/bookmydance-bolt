@@ -281,7 +281,7 @@ const handleDeleteLesson = (lessonId: string) => {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: 120px repeat(v-bind(showWeekend ? 7 : 5), 1fr);
+  grid-template-columns: 112px repeat(v-bind(showWeekend ? 7 : 5), 1fr);
   gap: 4px;
   padding: 6px;
   grid-template-rows: 48px repeat(10, 64px);
@@ -306,7 +306,7 @@ const handleDeleteLesson = (lessonId: string) => {
   grid-row: 1;
   border: 1px solid var(--border-secondary);
   width: 112px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* Day Headers */
@@ -315,22 +315,23 @@ const handleDeleteLesson = (lessonId: string) => {
   border: 1px solid var(--border-primary);
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.75rem;
+  gap: 0.5rem;
 }
 
 .day-name {
   font-weight: 600;
   color: var(--text-primary);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .day-date {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--text-secondary);
-  margin-top: 0.25rem;
+  margin-top: 0;
 }
 
 /* Time Slots */
@@ -346,6 +347,8 @@ const handleDeleteLesson = (lessonId: string) => {
   grid-column: 1;
   text-align: center;
   border: 1px solid var(--border-secondary);
+  width: 112px;
+  margin: 0;
 }
 
 .time-main {
@@ -373,6 +376,8 @@ const handleDeleteLesson = (lessonId: string) => {
   align-items: center;
   gap: 0.5rem;
   border: 1px solid var(--border-secondary);
+  width: 112px;
+  margin: 0;
 }
 
 .totals-header {
@@ -478,7 +483,7 @@ const handleDeleteLesson = (lessonId: string) => {
   margin-top: 1rem;
   padding: 8px;
   display: grid;
-  grid-template-columns: 120px repeat(v-bind(showWeekend ? 7 : 5), 1fr);
+  grid-template-columns: 112px repeat(v-bind(showWeekend ? 7 : 5), 1fr);
   gap: 8px;
   align-items: center;
   border: 1px solid var(--border-primary);
