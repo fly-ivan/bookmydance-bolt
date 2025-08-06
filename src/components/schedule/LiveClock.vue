@@ -42,20 +42,24 @@ onUnmounted(() => {
 .live-clock {
   background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   border-radius: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
   color: white;
   text-align: center;
-  min-width: 100px;
+  width: 120px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .time-display {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1;
 }
 
 .duration-display {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   opacity: 0.9;
   margin-top: 0.25rem;
 }

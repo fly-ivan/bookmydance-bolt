@@ -1,8 +1,6 @@
 <template>
   <div class="schedule-header">
     <div class="header-left">
-      <span class="schedule-title">Schedule</span>
-      
       <LiveClock />
     </div>
 
@@ -98,12 +96,9 @@ const onInstructorChange = (event: Event) => {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-}
-
-.schedule-title {
-  font-size: 1.25rem;
-  font-weight: 600;
+  gap: 0;
+  min-width: 120px;
+  justify-content: center;
 }
 
 .header-center {
