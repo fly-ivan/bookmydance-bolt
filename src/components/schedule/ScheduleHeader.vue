@@ -97,8 +97,9 @@ const onInstructorChange = (event: Event) => {
   display: flex;
   align-items: center;
   gap: 0;
-  min-width: 120px;
+  width: 120px;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .header-center {

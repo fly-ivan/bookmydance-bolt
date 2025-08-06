@@ -114,16 +114,16 @@ const getBadgeText = () => {
 }
 
 .lesson-time {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  color: #374151; /* text-gray-700 */
+  color: #4b5563; /* text-gray-600 - slightly lighter */
   min-width: 35px;
 }
 
 .lesson-student {
-  font-size: 14px;
-  font-weight: 600;
-  color: #374151; /* text-gray-700 */
+  font-size: 13px;
+  font-weight: 700;
+  color: #1f2937; /* text-gray-800 - darker for better readability */
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -137,15 +137,17 @@ const getBadgeText = () => {
 }
 
 .lesson-type {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
-  color: #374151; /* text-gray-700 */
+  color: #6b7280; /* text-gray-500 - lighter for secondary info */
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 .lesson-price {
-  font-size: 12px;
-  font-weight: 600;
-  color: #374151; /* text-gray-700 */
+  font-size: 13px;
+  font-weight: 700;
+  color: #059669; /* text-emerald-600 - green for money */
 }
 
 @media (max-width: 1024px) {

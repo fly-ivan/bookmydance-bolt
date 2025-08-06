@@ -45,11 +45,12 @@ onUnmounted(() => {
   padding: 1rem;
   color: white;
   text-align: center;
-  width: 100%;
+  width: 120px;
   height: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .time-display {
