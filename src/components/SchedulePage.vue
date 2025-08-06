@@ -31,6 +31,7 @@
         <!-- Time Slot -->
         <div class="time-slot">
           <div class="time-main">{{ slot.displayTime }}</div>
+          <div class="time-end">{{ slot.endTime }}</div>
         </div>
         
         <!-- Grid Cells for this time slot -->
@@ -335,8 +336,9 @@ const handleDeleteLesson = (lessonId: string) => {
   background: var(--time-column-bg);
   color: var(--text-primary);
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   border-radius: 8px;
   padding: 0.5rem;
   grid-column: 1;
@@ -346,7 +348,13 @@ const handleDeleteLesson = (lessonId: string) => {
 
 .time-main {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.time-end {
+  font-size: 0.75rem;
+  opacity: 0.8;
   line-height: 1;
 }
 

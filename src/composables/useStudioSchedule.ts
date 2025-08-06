@@ -157,16 +157,16 @@ export function useStudioSchedule() {
   ]);
 
   const timeSlots = computed<TimeSlot[]>(() => [
-    { time: '13:00', displayTime: '1:00 PM → 1:40 PM', endTime: '13:40' },
-    { time: '13:45', displayTime: '1:45 PM → 2:25 PM', endTime: '14:25' },
-    { time: '14:30', displayTime: '2:30 PM → 3:10 PM', endTime: '15:10' },
-    { time: '15:15', displayTime: '3:15 PM → 3:55 PM', endTime: '15:55' },
-    { time: '16:00', displayTime: '4:00 PM → 4:40 PM', endTime: '16:40' },
-    { time: '16:45', displayTime: '4:45 PM → 5:25 PM', endTime: '17:25' },
-    { time: '17:30', displayTime: '5:30 PM → 6:10 PM', endTime: '18:10' },
-    { time: '18:15', displayTime: '6:15 PM → 6:55 PM', endTime: '18:55' },
-    { time: '19:00', displayTime: '7:00 PM → 7:40 PM', endTime: '19:40' },
-    { time: '19:45', displayTime: '7:45 PM → 8:25 PM', endTime: '20:25' }
+    { time: '13:00', displayTime: '1:00', endTime: '1:40' },
+    { time: '13:45', displayTime: '1:45', endTime: '2:25' },
+    { time: '14:30', displayTime: '2:30', endTime: '3:10' },
+    { time: '15:15', displayTime: '3:15', endTime: '3:55' },
+    { time: '16:00', displayTime: '4:00', endTime: '4:40' },
+    { time: '16:45', displayTime: '4:45', endTime: '5:25' },
+    { time: '17:30', displayTime: '5:30', endTime: '6:10' },
+    { time: '18:15', displayTime: '6:15', endTime: '6:55' },
+    { time: '19:00', displayTime: '7:00', endTime: '7:40' },
+    { time: '19:45', displayTime: '7:45', endTime: '8:25' }
   ]);
 
   const weekDays = computed<WeekDay[]>(() => {
