@@ -305,6 +305,8 @@ const handleDeleteLesson = (lessonId: string) => {
   grid-column: 1;
   grid-row: 1;
   border: 1px solid var(--border-secondary);
+  width: 112px;
+  margin: 0 auto;
 }
 
 /* Day Headers */
