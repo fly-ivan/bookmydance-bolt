@@ -52,6 +52,7 @@ onUnmounted(() => {
   justify-content: center;
   flex-shrink: 0;
   margin: 0;
+  margin-left: 0;
   box-sizing: border-box;
   border: none;
 }
