@@ -29,6 +29,9 @@
             v-if="getLessonForSlot(slot.time, day.date)"
             :lesson="getLessonForSlot(slot.time, day.date)!"
             @click="editLesson(getLessonForSlot(slot.time, day.date)!)"
+            @cancel="handleCancelLesson"
+            @copy-phone="handleCopyPhone"
+            @post="handlePostLesson"
           />
           <button v-else class="add-lesson-btn">
             <Plus :size="16" />
@@ -76,6 +79,21 @@ const handleCellClick = (time: string, date: Date) => {
 
 const editLesson = (lesson: DanceLesson) => {
   emit('editLesson', lesson);
+};
+
+const handleCancelLesson = (lessonId: string) => {
+  console.log('Cancel lesson:', lessonId);
+  // You can emit this to parent or handle cancellation logic
+};
+
+const handleCopyPhone = (lessonId: string) => {
+  console.log('Phone copied for lesson:', lessonId);
+  // Phone number is already copied in the LessonTile component
+};
+
+const handlePostLesson = (lessonId: string) => {
+  console.log('Post lesson:', lessonId);
+  // You can emit this to parent or handle posting logic
 };
 </script>
 

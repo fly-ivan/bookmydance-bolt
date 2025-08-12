@@ -49,6 +49,9 @@
             draggable="true"
             @dragstart="handleDragStart($event, getLessonForSlot(slot.time, day.date)!)"
             @click.stop="editLesson(getLessonForSlot(slot.time, day.date)!)"
+            @cancel="handleCancelLesson"
+            @copy-phone="handleCopyPhone"  
+            @post="handlePostLesson"
           >
             <LessonTile :lesson="getLessonForSlot(slot.time, day.date)!" />
           </div>
@@ -258,6 +261,22 @@ const handleUpdateLesson = (lessonId: string, lesson: Omit<DanceLesson, 'id'>) =
 
 const handleDeleteLesson = (lessonId: string) => {
   deleteLesson(lessonId);
+};
+
+const handleCancelLesson = (lessonId: string) => {
+  console.log('Cancel lesson:', lessonId);
+  // Handle lesson cancellation
+  deleteLesson(lessonId);
+};
+
+const handleCopyPhone = (lessonId: string) => {
+  console.log('Phone copied for lesson:', lessonId);
+  // Phone number copying is handled in LessonTile component
+};
+
+const handlePostLesson = (lessonId: string) => {
+  console.log('Post lesson:', lessonId);
+  // Handle lesson posting logic
 };
 </script>
 
